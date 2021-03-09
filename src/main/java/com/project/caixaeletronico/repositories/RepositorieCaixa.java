@@ -4,10 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.project.caixaeletronico.entities.CaixaEntitie;
+import com.project.caixaeletronico.entities.CaixaEntity;
 
 @Repository
-public interface RepositorieCaixa extends JpaRepository<CaixaEntitie, Long> {
+public interface RepositorieCaixa extends JpaRepository<CaixaEntity, Long> {
 
 	@Query(value = "SELECT NAME FROM USER_TABLE where NAME = :user", nativeQuery = true)
 	String checkUser(String user);

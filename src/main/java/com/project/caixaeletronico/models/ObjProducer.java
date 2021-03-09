@@ -12,6 +12,20 @@ public class ObjProducer {
 	private Double balance;
 	private int mothsRetirement;
 
+	public ObjProducer() {
+		super();
+	}
+
+	public ObjProducer(String user, String password, String cpf, String email, Double balance, int mothsRetirement) {
+		super();
+		this.user = user;
+		this.password = password;
+		this.cpf = cpf;
+		this.email = email;
+		this.balance = balance;
+		this.mothsRetirement = mothsRetirement;
+	}
+
 	public String getCpf() {
 		return cpf;
 	}
@@ -42,6 +56,22 @@ public class ObjProducer {
 
 	public void setMothsRetirement(int yearsRetirement) {
 		this.mothsRetirement = yearsRetirement;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }

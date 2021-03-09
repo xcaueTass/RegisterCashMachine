@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "USER_TABLE")
-public class CaixaEntitie implements Serializable {
+public class CaixaEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -110,7 +110,7 @@ public class CaixaEntitie implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CaixaEntitie other = (CaixaEntitie) obj;
+		CaixaEntity other = (CaixaEntity) obj;
 		if (codUser != other.codUser)
 			return false;
 		return true;
